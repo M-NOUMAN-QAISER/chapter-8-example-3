@@ -25,6 +25,9 @@ jobs:
       REGISTRY_PW: ${{ secrets.REGISTRY_PW  }}
 
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE.
+      - uses: actions/checkout@v3
+      
       #
       # Installs Kubectl and connects it to the cluster.
       #
